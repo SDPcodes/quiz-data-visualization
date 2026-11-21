@@ -39,10 +39,10 @@ quiz-data-visualization/
 │   ├── students.csv
 │   └── results.json        every number quoted in the report
 └── report/
-    ├── report.tex          LaTeX source (main file)
-    ├── sec_*.tex           results and discussion sections
-    ├── references.bib      references
-    └── report.pdf          final report
+    ├── report.md           report text (Markdown, single source)
+    ├── build_report.py     builds report.docx and report.pdf from report.md
+    ├── report.docx         final report (Word)
+    └── report.pdf          final report (PDF)
 ```
 
 ## 2. How to run
@@ -58,12 +58,15 @@ python -m pytest -q        # optional: run the tests
 Each analysis file can also be run on its own, for example
 `python -m src.task1` or `python -m src.data_prep`.
 
-To rebuild the report PDF (needs a LaTeX installation):
+To rebuild the report (needs pandoc, python-docx and LibreOffice; the report
+uses Times New Roman):
 
 ```bash
 cd report
-latexmk -pdf report.tex
+python build_report.py     # writes report.docx and report.pdf
 ```
+
+You can also simply edit `report.docx` in Word and export it as PDF.
 
 ## 3. What the code does
 
