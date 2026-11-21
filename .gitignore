@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+# large generated data (re-create with: python run_all.py)
+outputs/cleaned_attempts.csv
+outputs/students.csv
+# LaTeX build files
+report/*.aux
+report/*.bbl
+report/*.blg
+report/*.fdb_latexmk
+report/*.fls
+report/*.log
+report/*.out
+report/*.toc

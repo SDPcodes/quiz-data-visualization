@@ -1,0 +1,5 @@
+step,rows_before,rows_after,rows_removed,note
+Load three CSV files,32596,32596,0,"Quiz 1: 13989, Quiz 2: 10474, Quiz 3: 8133"
+Drop 'In progress' attempts,32596,32407,189,"No grade, end time or question marks are recorded for these."
+Check grade = sum of question marks,32407,32407,0,0 mismatches found.
+Flag attempts longer than 60 min,32407,32407,0,"1436 attempts flagged; kept for score analyses, excluded from time analyses."

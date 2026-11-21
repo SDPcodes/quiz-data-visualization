@@ -1,0 +1,4 @@
+quiz,raw_rows,in_progress,finished,students,mean_attempts,max_attempts,first_mean_grade,best_mean_grade,median_minutes,long_sessions,blank_answers
+1,13989,78,13911,6656,2.09,7,2.83,5.66,5.4,513,1205
+2,10474,44,10430,6656,1.57,6,4.36,6.07,6.1,581,1031
+3,8133,67,8066,6635,1.22,5,6.07,6.8,5.8,342,55
